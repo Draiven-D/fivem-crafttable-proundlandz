@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Craftingtable</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarabun">
+	<link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</head>
+
+<body style=" background: none; display: none;" id="actionmenu">
+    <!-- <h3 id="head-id"></h3> -->
+    <div class="progress-container">
+        <div class="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="row p-lg-2">
+            <div class="col-md-3" style="padding-left: 0px !important; padding-right: 10px !important;">
+                <div class="card" style="border-radius: 20px;">
+                    <div class="card-header text-white pb-0" style="padding-top: 0.5rem;">
+                        <div class="card-title d-flex justify-content-between">
+                            <div id="title-item"></div>
+                        </div>
+                    </div>
+                    <div class="card-body " style="overflow-x: hidden; overflow-y: scroll; font-size: .675rem;">
+                        <div class="require_list text-white"></div>
+                    </div>
+                    <div class="card-footer bg-transparent text-white" style="padding: 0.5rem 1.25rem;">
+                        <div class="refine_box"></div>
+                        <div class="input-group mb-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-amount">&nbsp;จำนวน&nbsp;</span>
+                            </div>
+                            <input type="number" class="form-control" aria-label="amount" name="amount" aria-describedby="basic-amount" id="cracft-amount" min="1" value="1">
+                            <div class="input-group-append">
+                                <button type="button" id="btn-craft" data-catagory="ttt" onclick="craft(this)" data-arry="" data-plus="" data-item="" class="btn text-black">Craft</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7" style="padding-right: 5px !important;">
+                <div class="card" style="border-radius: 20px;">
+                    <div class="card-body" style="overflow-x: hidden; overflow-y: scroll;">
+						<div class="row list-grid"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <img src="Logotext.png" style="width: 100%; margin-top: -30px;margin-bottom: -30px;">
+                <div id="catagory-list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
